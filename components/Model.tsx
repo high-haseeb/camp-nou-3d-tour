@@ -13,329 +13,332 @@ import { useGLTF } from '@react-three/drei'
 import { GLTF } from 'three-stdlib'
 
 type GLTFResult = GLTF & {
-  nodes: {
-    Material2: THREE.Mesh
-    Material2_1: THREE.Mesh
-    Material3: THREE.Mesh
-    Material4: THREE.Mesh
-    Material5: THREE.Mesh
-    Material6: THREE.Mesh
-    Material7: THREE.Mesh
-    Material8: THREE.Mesh
-    Material9: THREE.Mesh
-    Material10: THREE.Mesh
-    Material11: THREE.Mesh
-    Material2_2: THREE.Mesh
-    Material3_1: THREE.Mesh
-    Material4_1: THREE.Mesh
-    Material2_3: THREE.Mesh
-    Material2_4: THREE.Mesh
-    Material2_5: THREE.Mesh
-    Material3_2: THREE.Mesh
-    Material4_2: THREE.Mesh
-    Material5_1: THREE.Mesh
-    Material6_1: THREE.Mesh
-    Material7_1: THREE.Mesh
-    Material8_1: THREE.Mesh
-    Material9_1: THREE.Mesh
-    Material10_1: THREE.Mesh
-    Material11_1: THREE.Mesh
-    Material12: THREE.Mesh
-    Material13: THREE.Mesh
-    Material14: THREE.Mesh
-    Material15: THREE.Mesh
-    Material16: THREE.Mesh
-    Material17: THREE.Mesh
-    Material18: THREE.Mesh
-    Material19: THREE.Mesh
-    Material20: THREE.Mesh
-    Material2_6: THREE.Mesh
-    Material3_3: THREE.Mesh
-    Material4_3: THREE.Mesh
-    Material5_2: THREE.Mesh
-    Material6_2: THREE.Mesh
-    Material2_7: THREE.Mesh
-    Material2_8: THREE.Mesh
-    Material2_9: THREE.Mesh
-    Material3_4: THREE.Mesh
-    Material4_4: THREE.Mesh
-    Material5_3: THREE.Mesh
-    Material2_10: THREE.Mesh
-    Material2_11: THREE.Mesh
-    Material3_5: THREE.Mesh
-    Material4_5: THREE.Mesh
-    Material5_4: THREE.Mesh
-    Material2_12: THREE.Mesh
-    Material2_13: THREE.Mesh
-    Material3_6: THREE.Mesh
-    Material4_6: THREE.Mesh
-    Material5_5: THREE.Mesh
-    Material2_14: THREE.Mesh
-    Material2_15: THREE.Mesh
-    Material3_7: THREE.Mesh
-    Material2_16: THREE.Mesh
-    Material4_7: THREE.Mesh
-    Material5_6: THREE.Mesh
-    Material6_3: THREE.Mesh
-    Material7_2: THREE.Mesh
-    Material8_2: THREE.Mesh
-    Material2_17: THREE.Mesh
-    Material2_18: THREE.Mesh
-    Material2_19: THREE.Mesh
-    Material3_8: THREE.Mesh
-    Material4_8: THREE.Mesh
-    Material5_7: THREE.Mesh
-    Material6_4: THREE.Mesh
-    Material7_3: THREE.Mesh
-    Material8_3: THREE.Mesh
-    Material9_2: THREE.Mesh
-    Material10_2: THREE.Mesh
-    Material2_20: THREE.Mesh
-    Material2_21: THREE.Mesh
-    Material2_22: THREE.Mesh
-    Material3_9: THREE.Mesh
-    Material4_9: THREE.Mesh
-    Material5_8: THREE.Mesh
-    Material2_23: THREE.Mesh
-    Material3_10: THREE.Mesh
-    Material2_24: THREE.Mesh
-    Material2_25: THREE.Mesh
-    Material2_26: THREE.Mesh
-    Material2_27: THREE.Mesh
-    Material2_28: THREE.Mesh
-    Material3_11: THREE.Mesh
-    Material4_10: THREE.Mesh
-    Material5_9: THREE.Mesh
-    Material6_5: THREE.Mesh
-    Material7_4: THREE.Mesh
-    Material8_4: THREE.Mesh
-    Material9_3: THREE.Mesh
-    Material10_3: THREE.Mesh
-    Material2_29: THREE.Mesh
-    Material2_30: THREE.Mesh
-    Material2_31: THREE.Mesh
-    Material2_32: THREE.Mesh
-    Material2_33: THREE.Mesh
-    Material2_34: THREE.Mesh
-    Material2_35: THREE.Mesh
-    Material2_36: THREE.Mesh
-    Material2_37: THREE.Mesh
-    Material3_12: THREE.Mesh
-    Material4_11: THREE.Mesh
-    Material2_38: THREE.Mesh
-  }
-  materials: {
-    cn_r1: THREE.MeshStandardMaterial
-    cn_f: THREE.MeshStandardMaterial
-    cn_f_0: THREE.MeshStandardMaterial
-    cn_f_1: THREE.MeshStandardMaterial
-    cn_f_2: THREE.MeshStandardMaterial
-    cn_f_3: THREE.MeshStandardMaterial
-    cn_f_4: THREE.MeshStandardMaterial
-    cn_f_5: THREE.MeshStandardMaterial
-    cn_f_6: THREE.MeshStandardMaterial
-    cn_f_7: THREE.MeshStandardMaterial
-    cn_f_8: THREE.MeshStandardMaterial
-    cnscf2: THREE.MeshStandardMaterial
-    cnscf2_9: THREE.MeshStandardMaterial
-    cnscf2_10: THREE.MeshStandardMaterial
-    Color_005: THREE.MeshStandardMaterial
-    material: THREE.MeshStandardMaterial
-    cn_r1_11: THREE.MeshStandardMaterial
-    cn_r1_12: THREE.MeshStandardMaterial
-    cn_r1_13: THREE.MeshStandardMaterial
-    cn_r1_14: THREE.MeshStandardMaterial
-    cn_r1_15: THREE.MeshStandardMaterial
-    cn_r1_16: THREE.MeshStandardMaterial
-    cn_r1_17: THREE.MeshStandardMaterial
-    cn_r1_18: THREE.MeshStandardMaterial
-    cn_r1_19: THREE.MeshStandardMaterial
-    cn_r1_20: THREE.MeshStandardMaterial
-    cn_r1_21: THREE.MeshStandardMaterial
-    cn_r1_22: THREE.MeshStandardMaterial
-    cn_r1_23: THREE.MeshStandardMaterial
-    cn_r1_24: THREE.MeshStandardMaterial
-    cn_r1_25: THREE.MeshStandardMaterial
-    cn_r1_26: THREE.MeshStandardMaterial
-    cn_r1_27: THREE.MeshStandardMaterial
-    cn_r1_28: THREE.MeshStandardMaterial
-    cn_bs: THREE.MeshStandardMaterial
-    cn_bs_29: THREE.MeshStandardMaterial
-    cn_bs_30: THREE.MeshStandardMaterial
-    cn_bs_31: THREE.MeshStandardMaterial
-    cn_bs_32: THREE.MeshStandardMaterial
-    cn_wt: THREE.MeshStandardMaterial
-    cn_rt: THREE.MeshStandardMaterial
-    cn_bbs: THREE.MeshStandardMaterial
-    cn_bbs_33: THREE.MeshStandardMaterial
-    cn_bbs_34: THREE.MeshStandardMaterial
-    cn_bbs_35: THREE.MeshStandardMaterial
-    cn_r2: THREE.MeshStandardMaterial
-    cn_rs: THREE.MeshStandardMaterial
-    cn_rs_36: THREE.MeshStandardMaterial
-    cn_rs_37: THREE.MeshStandardMaterial
-    cn_rs_38: THREE.MeshStandardMaterial
-    cn_et: THREE.MeshStandardMaterial
-    cn_rs_39: THREE.MeshStandardMaterial
-    cn_rs_40: THREE.MeshStandardMaterial
-    cn_rs_41: THREE.MeshStandardMaterial
-    cn_fb: THREE.MeshStandardMaterial
-    cn_bs_42: THREE.MeshStandardMaterial
-    cn_bs_43: THREE.MeshStandardMaterial
-    cn_bs_44: THREE.MeshStandardMaterial
-    cn_bs_45: THREE.MeshStandardMaterial
-    cn_bs_46: THREE.MeshStandardMaterial
-    cn_bs_47: THREE.MeshStandardMaterial
-    cn_rs_48: THREE.MeshStandardMaterial
-    cn_rs_49: THREE.MeshStandardMaterial
-    cn_rs_50: THREE.MeshStandardMaterial
-    cn_rs_51: THREE.MeshStandardMaterial
-    cn_rs_52: THREE.MeshStandardMaterial
-    cn_rs_53: THREE.MeshStandardMaterial
-    cn_rs_54: THREE.MeshStandardMaterial
-    cn_rs_55: THREE.MeshStandardMaterial
-    cn_fcb: THREE.MeshStandardMaterial
-    cn_fcb_56: THREE.MeshStandardMaterial
-    cn_fcb_57: THREE.MeshStandardMaterial
-    cn_fcb_58: THREE.MeshStandardMaterial
-    cn_mqc: THREE.MeshStandardMaterial
-    cn_mqc_59: THREE.MeshStandardMaterial
-    cn_rs_60: THREE.MeshStandardMaterial
-    cn_rs_61: THREE.MeshStandardMaterial
-    cn_rs_62: THREE.MeshStandardMaterial
-    cn_rs_63: THREE.MeshStandardMaterial
-    cn_rs_64: THREE.MeshStandardMaterial
-    cn_rs_65: THREE.MeshStandardMaterial
-    cn_rs_66: THREE.MeshStandardMaterial
-    cn_rs_67: THREE.MeshStandardMaterial
-    cn_scb: THREE.MeshStandardMaterial
-    Color_000: THREE.MeshStandardMaterial
-    cn_rut: THREE.MeshStandardMaterial
-    cnscf2_68: THREE.MeshStandardMaterial
-    cnscf2_69: THREE.MeshStandardMaterial
-  }
-  animations: GLTFAction[]
+    nodes: {
+        Material2: THREE.Mesh
+        Material2_1: THREE.Mesh
+        Material3: THREE.Mesh
+        Material4: THREE.Mesh
+        Material5: THREE.Mesh
+        Material6: THREE.Mesh
+        Material7: THREE.Mesh
+        Material8: THREE.Mesh
+        Material9: THREE.Mesh
+        Material10: THREE.Mesh
+        Material11: THREE.Mesh
+        Material2_2: THREE.Mesh
+        Material3_1: THREE.Mesh
+        Material4_1: THREE.Mesh
+        Material2_3: THREE.Mesh
+        Material2_4: THREE.Mesh
+        Material2_5: THREE.Mesh
+        Material3_2: THREE.Mesh
+        Material4_2: THREE.Mesh
+        Material5_1: THREE.Mesh
+        Material6_1: THREE.Mesh
+        Material7_1: THREE.Mesh
+        Material8_1: THREE.Mesh
+        Material9_1: THREE.Mesh
+        Material10_1: THREE.Mesh
+        Material11_1: THREE.Mesh
+        Material12: THREE.Mesh
+        Material13: THREE.Mesh
+        Material14: THREE.Mesh
+        Material15: THREE.Mesh
+        Material16: THREE.Mesh
+        Material17: THREE.Mesh
+        Material18: THREE.Mesh
+        Material19: THREE.Mesh
+        Material20: THREE.Mesh
+        Material2_6: THREE.Mesh
+        Material3_3: THREE.Mesh
+        Material4_3: THREE.Mesh
+        Material5_2: THREE.Mesh
+        Material6_2: THREE.Mesh
+        Material2_7: THREE.Mesh
+        Material2_8: THREE.Mesh
+        Material2_9: THREE.Mesh
+        Material3_4: THREE.Mesh
+        Material4_4: THREE.Mesh
+        Material5_3: THREE.Mesh
+        Material2_10: THREE.Mesh
+        Material2_11: THREE.Mesh
+        Material3_5: THREE.Mesh
+        Material4_5: THREE.Mesh
+        Material5_4: THREE.Mesh
+        Material2_12: THREE.Mesh
+        Material2_13: THREE.Mesh
+        Material3_6: THREE.Mesh
+        Material4_6: THREE.Mesh
+        Material5_5: THREE.Mesh
+        Material2_14: THREE.Mesh
+        Material2_15: THREE.Mesh
+        Material3_7: THREE.Mesh
+        Material2_16: THREE.Mesh
+        Material4_7: THREE.Mesh
+        Material5_6: THREE.Mesh
+        Material6_3: THREE.Mesh
+        Material7_2: THREE.Mesh
+        Material8_2: THREE.Mesh
+        Material2_17: THREE.Mesh
+        Material2_18: THREE.Mesh
+        Material2_19: THREE.Mesh
+        Material3_8: THREE.Mesh
+        Material4_8: THREE.Mesh
+        Material5_7: THREE.Mesh
+        Material6_4: THREE.Mesh
+        Material7_3: THREE.Mesh
+        Material8_3: THREE.Mesh
+        Material9_2: THREE.Mesh
+        Material10_2: THREE.Mesh
+        Material2_20: THREE.Mesh
+        Material2_21: THREE.Mesh
+        Material2_22: THREE.Mesh
+        Material3_9: THREE.Mesh
+        Material4_9: THREE.Mesh
+        Material5_8: THREE.Mesh
+        Material2_23: THREE.Mesh
+        Material3_10: THREE.Mesh
+        Material2_24: THREE.Mesh
+        Material2_25: THREE.Mesh
+        Material2_26: THREE.Mesh
+        Material2_27: THREE.Mesh
+        Material2_28: THREE.Mesh
+        Material3_11: THREE.Mesh
+        Material4_10: THREE.Mesh
+        Material5_9: THREE.Mesh
+        Material6_5: THREE.Mesh
+        Material7_4: THREE.Mesh
+        Material8_4: THREE.Mesh
+        Material9_3: THREE.Mesh
+        Material10_3: THREE.Mesh
+        Material2_29: THREE.Mesh
+        Material2_30: THREE.Mesh
+        Material2_31: THREE.Mesh
+        Material2_32: THREE.Mesh
+        Material2_33: THREE.Mesh
+        Material2_34: THREE.Mesh
+        Material2_35: THREE.Mesh
+        Material2_36: THREE.Mesh
+        Material2_37: THREE.Mesh
+        Material3_12: THREE.Mesh
+        Material4_11: THREE.Mesh
+        Material2_38: THREE.Mesh
+    }
+    materials: {
+        cn_r1: THREE.MeshStandardMaterial
+        cn_f: THREE.MeshStandardMaterial
+        cn_f_0: THREE.MeshStandardMaterial
+        cn_f_1: THREE.MeshStandardMaterial
+        cn_f_2: THREE.MeshStandardMaterial
+        cn_f_3: THREE.MeshStandardMaterial
+        cn_f_4: THREE.MeshStandardMaterial
+        cn_f_5: THREE.MeshStandardMaterial
+        cn_f_6: THREE.MeshStandardMaterial
+        cn_f_7: THREE.MeshStandardMaterial
+        cn_f_8: THREE.MeshStandardMaterial
+        cnscf2: THREE.MeshStandardMaterial
+        cnscf2_9: THREE.MeshStandardMaterial
+        cnscf2_10: THREE.MeshStandardMaterial
+        Color_005: THREE.MeshStandardMaterial
+        material: THREE.MeshStandardMaterial
+        cn_r1_11: THREE.MeshStandardMaterial
+        cn_r1_12: THREE.MeshStandardMaterial
+        cn_r1_13: THREE.MeshStandardMaterial
+        cn_r1_14: THREE.MeshStandardMaterial
+        cn_r1_15: THREE.MeshStandardMaterial
+        cn_r1_16: THREE.MeshStandardMaterial
+        cn_r1_17: THREE.MeshStandardMaterial
+        cn_r1_18: THREE.MeshStandardMaterial
+        cn_r1_19: THREE.MeshStandardMaterial
+        cn_r1_20: THREE.MeshStandardMaterial
+        cn_r1_21: THREE.MeshStandardMaterial
+        cn_r1_22: THREE.MeshStandardMaterial
+        cn_r1_23: THREE.MeshStandardMaterial
+        cn_r1_24: THREE.MeshStandardMaterial
+        cn_r1_25: THREE.MeshStandardMaterial
+        cn_r1_26: THREE.MeshStandardMaterial
+        cn_r1_27: THREE.MeshStandardMaterial
+        cn_r1_28: THREE.MeshStandardMaterial
+        cn_bs: THREE.MeshStandardMaterial
+        cn_bs_29: THREE.MeshStandardMaterial
+        cn_bs_30: THREE.MeshStandardMaterial
+        cn_bs_31: THREE.MeshStandardMaterial
+        cn_bs_32: THREE.MeshStandardMaterial
+        cn_wt: THREE.MeshStandardMaterial
+        cn_rt: THREE.MeshStandardMaterial
+        cn_bbs: THREE.MeshStandardMaterial
+        cn_bbs_33: THREE.MeshStandardMaterial
+        cn_bbs_34: THREE.MeshStandardMaterial
+        cn_bbs_35: THREE.MeshStandardMaterial
+        cn_r2: THREE.MeshStandardMaterial
+        cn_rs: THREE.MeshStandardMaterial
+        cn_rs_36: THREE.MeshStandardMaterial
+        cn_rs_37: THREE.MeshStandardMaterial
+        cn_rs_38: THREE.MeshStandardMaterial
+        cn_et: THREE.MeshStandardMaterial
+        cn_rs_39: THREE.MeshStandardMaterial
+        cn_rs_40: THREE.MeshStandardMaterial
+        cn_rs_41: THREE.MeshStandardMaterial
+        cn_fb: THREE.MeshStandardMaterial
+        cn_bs_42: THREE.MeshStandardMaterial
+        cn_bs_43: THREE.MeshStandardMaterial
+        cn_bs_44: THREE.MeshStandardMaterial
+        cn_bs_45: THREE.MeshStandardMaterial
+        cn_bs_46: THREE.MeshStandardMaterial
+        cn_bs_47: THREE.MeshStandardMaterial
+        cn_rs_48: THREE.MeshStandardMaterial
+        cn_rs_49: THREE.MeshStandardMaterial
+        cn_rs_50: THREE.MeshStandardMaterial
+        cn_rs_51: THREE.MeshStandardMaterial
+        cn_rs_52: THREE.MeshStandardMaterial
+        cn_rs_53: THREE.MeshStandardMaterial
+        cn_rs_54: THREE.MeshStandardMaterial
+        cn_rs_55: THREE.MeshStandardMaterial
+        cn_fcb: THREE.MeshStandardMaterial
+        cn_fcb_56: THREE.MeshStandardMaterial
+        cn_fcb_57: THREE.MeshStandardMaterial
+        cn_fcb_58: THREE.MeshStandardMaterial
+        cn_mqc: THREE.MeshStandardMaterial
+        cn_mqc_59: THREE.MeshStandardMaterial
+        cn_rs_60: THREE.MeshStandardMaterial
+        cn_rs_61: THREE.MeshStandardMaterial
+        cn_rs_62: THREE.MeshStandardMaterial
+        cn_rs_63: THREE.MeshStandardMaterial
+        cn_rs_64: THREE.MeshStandardMaterial
+        cn_rs_65: THREE.MeshStandardMaterial
+        cn_rs_66: THREE.MeshStandardMaterial
+        cn_rs_67: THREE.MeshStandardMaterial
+        cn_scb: THREE.MeshStandardMaterial
+        Color_000: THREE.MeshStandardMaterial
+        cn_rut: THREE.MeshStandardMaterial
+        cnscf2_68: THREE.MeshStandardMaterial
+        cnscf2_69: THREE.MeshStandardMaterial
+    }
+    // @ts-ignore
+    animations: GLTFAction[]
 }
 
+// @ts-ignore
 export function Model(props: JSX.IntrinsicElements['group']) {
-  const { nodes, materials } = useGLTF('/camp_nou_stadium.glb') as GLTFResult
-  return (
-    <group {...props} dispose={null} scale={0.0005}>
-      <group rotation={[-Math.PI / 2, 0, 0]}>
-        <group position={[-4455.959, -4800.122, 161.444]}>
-          <mesh geometry={nodes.Material2.geometry} material={materials.cn_r1} />
-          <mesh geometry={nodes.Material2_1.geometry} material={materials.cn_f} />
-          <mesh geometry={nodes.Material3.geometry} material={materials.cn_f_0} />
-          <mesh geometry={nodes.Material4.geometry} material={materials.cn_f_1} />
-          <mesh geometry={nodes.Material5.geometry} material={materials.cn_f_2} />
-          <mesh geometry={nodes.Material6.geometry} material={materials.cn_f_3} />
-          <mesh geometry={nodes.Material7.geometry} material={materials.cn_f_4} />
-          <mesh geometry={nodes.Material8.geometry} material={materials.cn_f_5} />
-          <mesh geometry={nodes.Material9.geometry} material={materials.cn_f_6} />
-          <mesh geometry={nodes.Material10.geometry} material={materials.cn_f_7} />
-          <mesh geometry={nodes.Material11.geometry} material={materials.cn_f_8} />
-          <mesh geometry={nodes.Material2_2.geometry} material={materials.cnscf2} />
-          <mesh geometry={nodes.Material3_1.geometry} material={materials.cnscf2_9} />
-          <mesh geometry={nodes.Material4_1.geometry} material={materials.cnscf2_10} />
-          <mesh geometry={nodes.Material2_3.geometry} material={materials.Color_005} />
-          <mesh geometry={nodes.Material2_4.geometry} material={materials.material} />
-          <mesh geometry={nodes.Material2_5.geometry} material={materials.cn_r1} />
-          <mesh geometry={nodes.Material3_2.geometry} material={materials.cn_r1_11} />
-          <mesh geometry={nodes.Material4_2.geometry} material={materials.cn_r1_12} />
-          <mesh geometry={nodes.Material5_1.geometry} material={materials.cn_r1_13} />
-          <mesh geometry={nodes.Material6_1.geometry} material={materials.cn_r1_14} />
-          <mesh geometry={nodes.Material7_1.geometry} material={materials.cn_r1_15} />
-          <mesh geometry={nodes.Material8_1.geometry} material={materials.cn_r1_16} />
-          <mesh geometry={nodes.Material9_1.geometry} material={materials.cn_r1_17} />
-          <mesh geometry={nodes.Material10_1.geometry} material={materials.cn_r1_18} />
-          <mesh geometry={nodes.Material11_1.geometry} material={materials.cn_r1_19} />
-          <mesh geometry={nodes.Material12.geometry} material={materials.cn_r1_20} />
-          <mesh geometry={nodes.Material13.geometry} material={materials.cn_r1_21} />
-          <mesh geometry={nodes.Material14.geometry} material={materials.cn_r1_22} />
-          <mesh geometry={nodes.Material15.geometry} material={materials.cn_r1_23} />
-          <mesh geometry={nodes.Material16.geometry} material={materials.cn_r1_24} />
-          <mesh geometry={nodes.Material17.geometry} material={materials.cn_r1_25} />
-          <mesh geometry={nodes.Material18.geometry} material={materials.cn_r1_26} />
-          <mesh geometry={nodes.Material19.geometry} material={materials.cn_r1_27} />
-          <mesh geometry={nodes.Material20.geometry} material={materials.cn_r1_28} />
-          <mesh geometry={nodes.Material2_6.geometry} material={materials.cn_bs} />
-          <mesh geometry={nodes.Material3_3.geometry} material={materials.cn_bs_29} />
-          <mesh geometry={nodes.Material4_3.geometry} material={materials.cn_bs_30} />
-          <mesh geometry={nodes.Material5_2.geometry} material={materials.cn_bs_31} />
-          <mesh geometry={nodes.Material6_2.geometry} material={materials.cn_bs_32} />
-          <mesh geometry={nodes.Material2_7.geometry} material={materials.cn_wt} />
-          <mesh geometry={nodes.Material2_8.geometry} material={materials.cn_rt} />
-          <mesh geometry={nodes.Material2_9.geometry} material={materials.cn_bbs} />
-          <mesh geometry={nodes.Material3_4.geometry} material={materials.cn_bbs_33} />
-          <mesh geometry={nodes.Material4_4.geometry} material={materials.cn_bbs_34} />
-          <mesh geometry={nodes.Material5_3.geometry} material={materials.cn_bbs_35} />
-          <mesh geometry={nodes.Material2_10.geometry} material={materials.cn_r2} />
-          <mesh geometry={nodes.Material2_11.geometry} material={materials.cn_rs} />
-          <mesh geometry={nodes.Material3_5.geometry} material={materials.cn_rs_36} />
-          <mesh geometry={nodes.Material4_5.geometry} material={materials.cn_rs_37} />
-          <mesh geometry={nodes.Material5_4.geometry} material={materials.cn_rs_38} />
-          <mesh geometry={nodes.Material2_12.geometry} material={materials.cn_et} />
-          <mesh geometry={nodes.Material2_13.geometry} material={materials.cn_rs_37} />
-          <mesh geometry={nodes.Material3_6.geometry} material={materials.cn_rs_39} />
-          <mesh geometry={nodes.Material4_6.geometry} material={materials.cn_rs_40} />
-          <mesh geometry={nodes.Material5_5.geometry} material={materials.cn_rs_41} />
-          <mesh geometry={nodes.Material2_14.geometry} material={materials.Color_005} />
-          <mesh geometry={nodes.Material2_15.geometry} material={materials.cn_fb} />
-          <mesh geometry={nodes.Material3_7.geometry} material={materials.cn_bs_42} />
-          <mesh geometry={nodes.Material2_16.geometry} material={materials.cn_bs_29} />
-          <mesh geometry={nodes.Material4_7.geometry} material={materials.cn_bs_43} />
-          <mesh geometry={nodes.Material5_6.geometry} material={materials.cn_bs_44} />
-          <mesh geometry={nodes.Material6_3.geometry} material={materials.cn_bs_45} />
-          <mesh geometry={nodes.Material7_2.geometry} material={materials.cn_bs_46} />
-          <mesh geometry={nodes.Material8_2.geometry} material={materials.cn_bs_47} />
-          <mesh geometry={nodes.Material2_17.geometry} material={materials.Color_005} />
-          <mesh geometry={nodes.Material2_18.geometry} material={materials.Color_005} />
-          <mesh geometry={nodes.Material2_19.geometry} material={materials.cn_rs_37} />
-          <mesh geometry={nodes.Material3_8.geometry} material={materials.cn_rs_48} />
-          <mesh geometry={nodes.Material4_8.geometry} material={materials.cn_rs_49} />
-          <mesh geometry={nodes.Material5_7.geometry} material={materials.cn_rs_50} />
-          <mesh geometry={nodes.Material6_4.geometry} material={materials.cn_rs_51} />
-          <mesh geometry={nodes.Material7_3.geometry} material={materials.cn_rs_52} />
-          <mesh geometry={nodes.Material8_3.geometry} material={materials.cn_rs_53} />
-          <mesh geometry={nodes.Material9_2.geometry} material={materials.cn_rs_54} />
-          <mesh geometry={nodes.Material10_2.geometry} material={materials.cn_rs_55} />
-          <mesh geometry={nodes.Material2_20.geometry} material={materials.cn_bs_29} />
-          <mesh geometry={nodes.Material2_21.geometry} material={materials.Color_005} />
-          <mesh geometry={nodes.Material2_22.geometry} material={materials.cn_fcb} />
-          <mesh geometry={nodes.Material3_9.geometry} material={materials.cn_fcb_56} />
-          <mesh geometry={nodes.Material4_9.geometry} material={materials.cn_fcb_57} />
-          <mesh geometry={nodes.Material5_8.geometry} material={materials.cn_fcb_58} />
-          <mesh geometry={nodes.Material2_23.geometry} material={materials.cn_mqc} />
-          <mesh geometry={nodes.Material3_10.geometry} material={materials.cn_mqc_59} />
-          <mesh geometry={nodes.Material2_24.geometry} material={materials.cn_fb} />
-          <mesh geometry={nodes.Material2_25.geometry} material={materials.cn_fb} />
-          <mesh geometry={nodes.Material2_26.geometry} material={materials.cnscf2} />
-          <mesh geometry={nodes.Material2_27.geometry} material={materials.Color_005} />
-          <mesh geometry={nodes.Material2_28.geometry} material={materials.cn_rs_37} />
-          <mesh geometry={nodes.Material3_11.geometry} material={materials.cn_rs_60} />
-          <mesh geometry={nodes.Material4_10.geometry} material={materials.cn_rs_61} />
-          <mesh geometry={nodes.Material5_9.geometry} material={materials.cn_rs_62} />
-          <mesh geometry={nodes.Material6_5.geometry} material={materials.cn_rs_63} />
-          <mesh geometry={nodes.Material7_4.geometry} material={materials.cn_rs_64} />
-          <mesh geometry={nodes.Material8_4.geometry} material={materials.cn_rs_65} />
-          <mesh geometry={nodes.Material9_3.geometry} material={materials.cn_rs_66} />
-          <mesh geometry={nodes.Material10_3.geometry} material={materials.cn_rs_67} />
-          <mesh geometry={nodes.Material2_29.geometry} material={materials.cn_fb} />
-          <mesh geometry={nodes.Material2_30.geometry} material={materials.Color_005} />
-          <mesh geometry={nodes.Material2_31.geometry} material={materials.cn_scb} />
-          <mesh geometry={nodes.Material2_32.geometry} material={materials.cn_bs_29} />
-          <mesh geometry={nodes.Material2_33.geometry} material={materials.Color_005} />
-          <mesh geometry={nodes.Material2_34.geometry} material={materials.Color_000} />
-          <mesh geometry={nodes.Material2_35.geometry} material={materials.Color_005} />
-          <mesh geometry={nodes.Material2_36.geometry} material={materials.cn_scb} />
-          <mesh geometry={nodes.Material2_37.geometry} material={materials.cn_rut} />
-          <mesh geometry={nodes.Material3_12.geometry} material={materials.cnscf2_68} />
-          <mesh geometry={nodes.Material4_11.geometry} material={materials.cnscf2_69} />
-          <mesh geometry={nodes.Material2_38.geometry} material={materials.cnscf2} />
+    // @ts-ignore
+    const { nodes, materials } = useGLTF('/camp_nou_stadium.glb') as GLTFResult
+    return (
+        <group {...props} dispose={null} scale={0.0005}>
+            <group rotation={[-Math.PI / 2, 0, 0]}>
+                <group position={[-4455.959, -4800.122, 161.444]}>
+                    <mesh geometry={nodes.Material2.geometry} material={materials.cn_r1} />
+                    <mesh geometry={nodes.Material2_1.geometry} material={materials.cn_f} />
+                    <mesh geometry={nodes.Material3.geometry} material={materials.cn_f_0} />
+                    <mesh geometry={nodes.Material4.geometry} material={materials.cn_f_1} />
+                    <mesh geometry={nodes.Material5.geometry} material={materials.cn_f_2} />
+                    <mesh geometry={nodes.Material6.geometry} material={materials.cn_f_3} />
+                    <mesh geometry={nodes.Material7.geometry} material={materials.cn_f_4} />
+                    <mesh geometry={nodes.Material8.geometry} material={materials.cn_f_5} />
+                    <mesh geometry={nodes.Material9.geometry} material={materials.cn_f_6} />
+                    <mesh geometry={nodes.Material10.geometry} material={materials.cn_f_7} />
+                    <mesh geometry={nodes.Material11.geometry} material={materials.cn_f_8} />
+                    <mesh geometry={nodes.Material2_2.geometry} material={materials.cnscf2} />
+                    <mesh geometry={nodes.Material3_1.geometry} material={materials.cnscf2_9} />
+                    <mesh geometry={nodes.Material4_1.geometry} material={materials.cnscf2_10} />
+                    <mesh geometry={nodes.Material2_3.geometry} material={materials.Color_005} />
+                    <mesh geometry={nodes.Material2_4.geometry} material={materials.material} />
+                    <mesh geometry={nodes.Material2_5.geometry} material={materials.cn_r1} />
+                    <mesh geometry={nodes.Material3_2.geometry} material={materials.cn_r1_11} />
+                    <mesh geometry={nodes.Material4_2.geometry} material={materials.cn_r1_12} />
+                    <mesh geometry={nodes.Material5_1.geometry} material={materials.cn_r1_13} />
+                    <mesh geometry={nodes.Material6_1.geometry} material={materials.cn_r1_14} />
+                    <mesh geometry={nodes.Material7_1.geometry} material={materials.cn_r1_15} />
+                    <mesh geometry={nodes.Material8_1.geometry} material={materials.cn_r1_16} />
+                    <mesh geometry={nodes.Material9_1.geometry} material={materials.cn_r1_17} />
+                    <mesh geometry={nodes.Material10_1.geometry} material={materials.cn_r1_18} />
+                    <mesh geometry={nodes.Material11_1.geometry} material={materials.cn_r1_19} />
+                    <mesh geometry={nodes.Material12.geometry} material={materials.cn_r1_20} />
+                    <mesh geometry={nodes.Material13.geometry} material={materials.cn_r1_21} />
+                    <mesh geometry={nodes.Material14.geometry} material={materials.cn_r1_22} />
+                    <mesh geometry={nodes.Material15.geometry} material={materials.cn_r1_23} />
+                    <mesh geometry={nodes.Material16.geometry} material={materials.cn_r1_24} />
+                    <mesh geometry={nodes.Material17.geometry} material={materials.cn_r1_25} />
+                    <mesh geometry={nodes.Material18.geometry} material={materials.cn_r1_26} />
+                    <mesh geometry={nodes.Material19.geometry} material={materials.cn_r1_27} />
+                    <mesh geometry={nodes.Material20.geometry} material={materials.cn_r1_28} />
+                    <mesh geometry={nodes.Material2_6.geometry} material={materials.cn_bs} />
+                    <mesh geometry={nodes.Material3_3.geometry} material={materials.cn_bs_29} />
+                    <mesh geometry={nodes.Material4_3.geometry} material={materials.cn_bs_30} />
+                    <mesh geometry={nodes.Material5_2.geometry} material={materials.cn_bs_31} />
+                    <mesh geometry={nodes.Material6_2.geometry} material={materials.cn_bs_32} />
+                    <mesh geometry={nodes.Material2_7.geometry} material={materials.cn_wt} />
+                    <mesh geometry={nodes.Material2_8.geometry} material={materials.cn_rt} />
+                    <mesh geometry={nodes.Material2_9.geometry} material={materials.cn_bbs} />
+                    <mesh geometry={nodes.Material3_4.geometry} material={materials.cn_bbs_33} />
+                    <mesh geometry={nodes.Material4_4.geometry} material={materials.cn_bbs_34} />
+                    <mesh geometry={nodes.Material5_3.geometry} material={materials.cn_bbs_35} />
+                    <mesh geometry={nodes.Material2_10.geometry} material={materials.cn_r2} />
+                    <mesh geometry={nodes.Material2_11.geometry} material={materials.cn_rs} />
+                    <mesh geometry={nodes.Material3_5.geometry} material={materials.cn_rs_36} />
+                    <mesh geometry={nodes.Material4_5.geometry} material={materials.cn_rs_37} />
+                    <mesh geometry={nodes.Material5_4.geometry} material={materials.cn_rs_38} />
+                    <mesh geometry={nodes.Material2_12.geometry} material={materials.cn_et} />
+                    <mesh geometry={nodes.Material2_13.geometry} material={materials.cn_rs_37} />
+                    <mesh geometry={nodes.Material3_6.geometry} material={materials.cn_rs_39} />
+                    <mesh geometry={nodes.Material4_6.geometry} material={materials.cn_rs_40} />
+                    <mesh geometry={nodes.Material5_5.geometry} material={materials.cn_rs_41} />
+                    <mesh geometry={nodes.Material2_14.geometry} material={materials.Color_005} />
+                    <mesh geometry={nodes.Material2_15.geometry} material={materials.cn_fb} />
+                    <mesh geometry={nodes.Material3_7.geometry} material={materials.cn_bs_42} />
+                    <mesh geometry={nodes.Material2_16.geometry} material={materials.cn_bs_29} />
+                    <mesh geometry={nodes.Material4_7.geometry} material={materials.cn_bs_43} />
+                    <mesh geometry={nodes.Material5_6.geometry} material={materials.cn_bs_44} />
+                    <mesh geometry={nodes.Material6_3.geometry} material={materials.cn_bs_45} />
+                    <mesh geometry={nodes.Material7_2.geometry} material={materials.cn_bs_46} />
+                    <mesh geometry={nodes.Material8_2.geometry} material={materials.cn_bs_47} />
+                    <mesh geometry={nodes.Material2_17.geometry} material={materials.Color_005} />
+                    <mesh geometry={nodes.Material2_18.geometry} material={materials.Color_005} />
+                    <mesh geometry={nodes.Material2_19.geometry} material={materials.cn_rs_37} />
+                    <mesh geometry={nodes.Material3_8.geometry} material={materials.cn_rs_48} />
+                    <mesh geometry={nodes.Material4_8.geometry} material={materials.cn_rs_49} />
+                    <mesh geometry={nodes.Material5_7.geometry} material={materials.cn_rs_50} />
+                    <mesh geometry={nodes.Material6_4.geometry} material={materials.cn_rs_51} />
+                    <mesh geometry={nodes.Material7_3.geometry} material={materials.cn_rs_52} />
+                    <mesh geometry={nodes.Material8_3.geometry} material={materials.cn_rs_53} />
+                    <mesh geometry={nodes.Material9_2.geometry} material={materials.cn_rs_54} />
+                    <mesh geometry={nodes.Material10_2.geometry} material={materials.cn_rs_55} />
+                    <mesh geometry={nodes.Material2_20.geometry} material={materials.cn_bs_29} />
+                    <mesh geometry={nodes.Material2_21.geometry} material={materials.Color_005} />
+                    <mesh geometry={nodes.Material2_22.geometry} material={materials.cn_fcb} />
+                    <mesh geometry={nodes.Material3_9.geometry} material={materials.cn_fcb_56} />
+                    <mesh geometry={nodes.Material4_9.geometry} material={materials.cn_fcb_57} />
+                    <mesh geometry={nodes.Material5_8.geometry} material={materials.cn_fcb_58} />
+                    <mesh geometry={nodes.Material2_23.geometry} material={materials.cn_mqc} />
+                    <mesh geometry={nodes.Material3_10.geometry} material={materials.cn_mqc_59} />
+                    <mesh geometry={nodes.Material2_24.geometry} material={materials.cn_fb} />
+                    <mesh geometry={nodes.Material2_25.geometry} material={materials.cn_fb} />
+                    <mesh geometry={nodes.Material2_26.geometry} material={materials.cnscf2} />
+                    <mesh geometry={nodes.Material2_27.geometry} material={materials.Color_005} />
+                    <mesh geometry={nodes.Material2_28.geometry} material={materials.cn_rs_37} />
+                    <mesh geometry={nodes.Material3_11.geometry} material={materials.cn_rs_60} />
+                    <mesh geometry={nodes.Material4_10.geometry} material={materials.cn_rs_61} />
+                    <mesh geometry={nodes.Material5_9.geometry} material={materials.cn_rs_62} />
+                    <mesh geometry={nodes.Material6_5.geometry} material={materials.cn_rs_63} />
+                    <mesh geometry={nodes.Material7_4.geometry} material={materials.cn_rs_64} />
+                    <mesh geometry={nodes.Material8_4.geometry} material={materials.cn_rs_65} />
+                    <mesh geometry={nodes.Material9_3.geometry} material={materials.cn_rs_66} />
+                    <mesh geometry={nodes.Material10_3.geometry} material={materials.cn_rs_67} />
+                    <mesh geometry={nodes.Material2_29.geometry} material={materials.cn_fb} />
+                    <mesh geometry={nodes.Material2_30.geometry} material={materials.Color_005} />
+                    <mesh geometry={nodes.Material2_31.geometry} material={materials.cn_scb} />
+                    <mesh geometry={nodes.Material2_32.geometry} material={materials.cn_bs_29} />
+                    <mesh geometry={nodes.Material2_33.geometry} material={materials.Color_005} />
+                    <mesh geometry={nodes.Material2_34.geometry} material={materials.Color_000} />
+                    <mesh geometry={nodes.Material2_35.geometry} material={materials.Color_005} />
+                    <mesh geometry={nodes.Material2_36.geometry} material={materials.cn_scb} />
+                    <mesh geometry={nodes.Material2_37.geometry} material={materials.cn_rut} />
+                    <mesh geometry={nodes.Material3_12.geometry} material={materials.cnscf2_68} />
+                    <mesh geometry={nodes.Material4_11.geometry} material={materials.cnscf2_69} />
+                    <mesh geometry={nodes.Material2_38.geometry} material={materials.cnscf2} />
+                </group>
+            </group>
         </group>
-      </group>
-    </group>
-  )
+    )
 }
 
 useGLTF.preload('/camp_nou_stadium.glb')
